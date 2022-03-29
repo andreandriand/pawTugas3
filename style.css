@@ -1,0 +1,7 @@
+.action a:link, .action a:visited, .action a:active, .action a:hover {
+    text-decoration: none;
+}
+
+.action i{
+    color: black;
+}
