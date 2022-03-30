@@ -60,5 +60,3 @@
         
         return(mysqli_affected_rows($conn));
     }
-
-?>
