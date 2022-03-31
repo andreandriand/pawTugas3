@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 require 'functions.php';
 $clubs = query("SELECT * FROM  clubs_210");
@@ -7,6 +7,7 @@ $clubs = query("SELECT * FROM  clubs_210");
 
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -30,6 +31,7 @@ $clubs = query("SELECT * FROM  clubs_210");
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
 
     <!-- Right Panel -->
@@ -180,25 +182,25 @@ $clubs = query("SELECT * FROM  clubs_210");
                                     </thead>
                                     <tbody>
                                         <?php $no = 1; ?>
-                                        <?php foreach($clubs as $club) : ?>
-                                        <tr>
-                                            <td class="serial"><?= $no; ?></td>
-                                            <td class="avatar"><img src="img/<?= $club["logo"]; ?>" alt="Logo Klub"></td>
-                                            <td><span class="name"><?= $club["name"]; ?></span></td>
-                                            <td><span class="product"><?= $club["country"]; ?></span></td>
-                                            <td><span class="count"><?= $club["year"]; ?></span></td>
-                                            <td><span class="product"><?= $club["manager"]; ?></span></td>
-                                            <td><span class="product"><?= $club["stadium"]; ?></span></td>
-                                            <td>
-                                                <span class="badge badge-complete action">
-                                                    <a href="edit.php?id=<?= $club["id"]; ?>"><i class="bi bi-pencil-square"></i></a>
-                                                </span>
-                                                <span class="badge badge-danger action">
-                                                    <a href="delete.php?id=<?= $club["id"]; ?>" onclick="return confirm('Are you sure?')"><i class="bi bi-trash-fill"></i></a>
-                                                </span>
-                                            </td>
-                                        </tr>
-                                        <?php $no++ ?>
+                                        <?php foreach ($clubs as $club) : ?>
+                                            <tr>
+                                                <td class="serial"><?= $no; ?></td>
+                                                <td class="avatar"><img src="img/<?= $club["logo"]; ?>" alt="Logo Klub"></td>
+                                                <td><span class="name"><?= $club["name"]; ?></span></td>
+                                                <td><span class="product"><?= $club["country"]; ?></span></td>
+                                                <td><span class="count"><?= $club["year"]; ?></span></td>
+                                                <td><span class="product"><?= $club["manager"]; ?></span></td>
+                                                <td><span class="product"><?= $club["stadium"]; ?></span></td>
+                                                <td>
+                                                    <span class="badge badge-complete action">
+                                                        <a href="edit.php?id=<?= $club["id"]; ?>"><i class="bi bi-pencil-square"></i></a>
+                                                    </span>
+                                                    <span class="badge badge-danger action">
+                                                        <a href="delete.php?id=<?= $club["id"]; ?>" onclick="return confirm('Are you sure?')"><i class="bi bi-trash-fill"></i></a>
+                                                    </span>
+                                                </td>
+                                            </tr>
+                                            <?php $no++ ?>
                                         <?php endforeach; ?>
                                     </tbody>
                                 </table>
@@ -209,34 +211,35 @@ $clubs = query("SELECT * FROM  clubs_210");
             </div>
         </div>
     </div><!-- .animated -->
-</div><!-- .content -->
+    </div><!-- .content -->
 
-<div class="clearfix"></div>
+    <div class="clearfix"></div>
 
-<footer class="site-footer">
-    <div class="footer-inner bg-white">
-        <div class="row">
-            <div class="col-sm-6">
-                Copyright &copy; 2022 Andrian Dwi Baitur Rizky
-            </div>
-            <div class="col-sm-6 text-right">
-                Designed by <a href="https://colorlib.com">Andre</a>
+    <footer class="site-footer">
+        <div class="footer-inner bg-white">
+            <div class="row">
+                <div class="col-sm-6">
+                    Copyright &copy; 2022 Andrian Dwi Baitur Rizky
+                </div>
+                <div class="col-sm-6 text-right">
+                    Designed by <a href="https://colorlib.com">Andre</a>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-</div><!-- /#right-panel -->
+    </div><!-- /#right-panel -->
 
-<!-- Right Panel -->
+    <!-- Right Panel -->
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
-<script src="assets/js/main.js"></script>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+    <script src="assets/js/main.js"></script>
 
 
 </body>
+
 </html>
